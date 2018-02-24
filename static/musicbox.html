@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Music Box Simulator</title>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+        <script src='js/cyo.js'></script>
+        <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    </head>
+    <body ng-app="cyo" class='container'>
+        <story>
+            <h1>Music Box Simulator</h1>
+            <page intro>
+                <p>You join the Music Box Discord server.</p>
+                <p>People are shitposting about Radiohead</p>
+                <button choice introduce>I should introduce myself</button>
+                <button choice child-molester>"Thom Yorke is a child molester"</button>
+            </page>
+            <page introduce>
+                <p>"Hi, I'm new here!"</p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p>Nobody responds to you.</p>
+                <button choice banned>Start a civilised discussion about music</button>
+                <button choice child-molester>"Thom Yorke is a child molester"</button>
+            </page>
+            <page child-molester>
+                <p>"I agree, and OK Computer is actually a bad album!" comes the response</p>
+                <p>"Welcome to the server!"</p>
+                <button choice food>"My Bloody Valentine are a bad band, Loveless is boring"</button>
+                <button choice new-release>"How bout that new album by that artist huh?"</button>
+            </page>
+            <page new-release>
+                <p>Everybody hates that new album, you are widely ridiculed.</p>
+                <button choice bullying>"Car Seat Headrest is a good band"</button>
+                <button choice banned>"Music taste is subjective"</button>
+            </page>
+            <page bullying>
+                <p>Ambi embarks on a sustained campaign of bullying against you</p>
+                <button choice banned>Retaliate</button>
+                <button choice moderator>Cry into your pillow</button>
+            </page>
+            <page food>
+                <p>You have angered Julia, you're on thin ice pal.</p>
+                <button choice banned-julia>Continue talking shit about MBV</button>
+                <button choice moderator>Buy Julia a pizza</button>
+            </page>
+            <page moderator>
+                <p>You are now a moderator of The Music Box.</p>
+                <p>Beeper requests to be unbanned.</p>
+                <button choice furry>Give beeper another chance</button>
+                <button choice refuse>Refuse</button>
+            </page>
+            <page refuse>
+                <p>Your Expedits full of Ween records collapse. You are crushed and killed instantly.</p>
+                <button restart>Play again?</button>
+            </page>
+            <page furry>
+                <p>The server becomes overrun with furry content. You develop a fursona and are disowned by your family and friends.</p>
+                <p>Ambi sees that you unbanned beeper, you are banned from The Music Box.</p>
+                <button restart>Play again?</button>
+            </page>
+            <page banned>
+                <p>You have been banned from The Music Box.</p>
+                <button restart>Play again?</button>
+            </page>
+            <page banned-julia>
+                <p>Julia has banned you from The Music Box.</p>
+                <button restart>Play again?</button>
+            </page>
+        </story>
+        <iframe width="1" height="1" wmode="transparent" src="//www.youtube.com/embed/nHaevT98wgI?autoplay=1&loop=1&playlist=nHaevT98wgI" frameborder="0" allowfullscreen></iframe>
+    </body>
+</html>
